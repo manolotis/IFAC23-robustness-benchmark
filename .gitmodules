@@ -2,3 +2,6 @@
 	path = multipathPP
 	url = git@github.com:manolotis/waymo-motion-prediction-challenge-2022-multipath-plus-plus.git
 	branch = robustness_benchmark
+[submodule "motionCNN"]
+	path = motionCNN
+	url = git@github.com:manolotis/MotionCNN.git
