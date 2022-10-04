@@ -27,6 +27,7 @@ oauthlib==3.2.1
 opt-einsum==3.3.0
 packaging==21.3
 Pillow==9.2.0
+pkg_resources==0.0.0
 protobuf==3.19.6
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
@@ -45,10 +46,11 @@ tensorflow-estimator==2.10.0
 tensorflow-io-gcs-filesystem==0.27.0
 termcolor==2.0.1
 torch==1.12.1+cu116
+torch-scatter==2.0.9
 torchaudio==0.12.1+cu116
 torchvision==0.13.1+cu116
 tqdm==4.64.1
-typing-extensions==4.3.0
+typing_extensions==4.3.0
 urllib3==1.26.12
 Werkzeug==2.2.2
 wrapt==1.14.1
