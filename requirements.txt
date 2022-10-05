@@ -5,6 +5,7 @@ certifi==2022.9.24
 charset-normalizer==2.1.1
 contourpy==1.0.5
 cycler==0.11.0
+filelock==3.8.0
 flatbuffers==22.9.24
 fonttools==4.37.4
 gast==0.4.0
@@ -13,6 +14,7 @@ google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
 grpcio==1.49.1
 h5py==3.7.0
+huggingface-hub==0.10.0
 idna==3.4
 importlib-metadata==5.0.0
 keras==2.10.0
@@ -46,6 +48,7 @@ tensorflow==2.10.0
 tensorflow-estimator==2.10.0
 tensorflow-io-gcs-filesystem==0.27.0
 termcolor==2.0.1
+timm==0.6.11
 torch==1.12.1+cu116
 torch-scatter==2.0.9
 torchaudio==0.12.1+cu116
