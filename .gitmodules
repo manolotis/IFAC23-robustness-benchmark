@@ -5,3 +5,6 @@
 [submodule "motionCNN"]
 	path = motionCNN
 	url = git@github.com:manolotis/MotionCNN.git
+[submodule "lstmAutoencoder"]
+	path = lstmAutoencoder
+	url = git@github.com:manolotis/lstmAutoencoder.git
