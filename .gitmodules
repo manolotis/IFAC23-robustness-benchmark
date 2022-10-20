@@ -8,3 +8,9 @@
 [submodule "lstmAutoencoder"]
 	path = lstmAutoencoder
 	url = git@github.com:manolotis/lstmAutoencoder.git
+[submodule "physicsBased"]
+	path = physicsBased
+	url = git@github.com:manolotis/physics-based-prediction.git
+[submodule "waymo_utils"]
+	path = waymo_utils
+	url = git@github.com:manolotis/waymo_utils.git
