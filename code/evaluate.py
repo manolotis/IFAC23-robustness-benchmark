@@ -30,9 +30,6 @@ for config in evaluation_configs:
 
     averaged_minADEs = averaged_minADE(predictions_dataloader)
 
-    # evaluation = {
-    #     "minADE": averaged_minADEs
-    # }
     np.savez_compressed(
         os.path.join(
             config["output_config"]["out_path"],

@@ -1,27 +1,145 @@
 - data_config:
     dataset_config:
-      data_path: "/home/manolotis/sandbox/robustness_benchmark/motionCNN/predictions/"
+      data_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/predictions/"
     dataloader_config:
       num_workers: 8
   output_config:
-    out_path: "/home/manolotis/sandbox/robustness_benchmark/motionCNN/evaluations/"
+    out_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/evaluations/"
   model:
-    name: "xception71"
+    name: "lstm_1x64__0303335"
 - data_config:
     dataset_config:
-      data_path: "/home/manolotis/sandbox/robustness_benchmark/multipathPP/predictions/"
+      data_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/predictions/"
     dataloader_config:
       num_workers: 8
   output_config:
-    out_path: "/home/manolotis/sandbox/robustness_benchmark/multipathPP/evaluations/"
+    out_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/evaluations/"
   model:
-    name: "final_RoP_Cov_Single_lr4e-4__65c803f"
+    name: "lstm_1x128__0303335"
 - data_config:
     dataset_config:
-      data_path: "/home/manolotis/sandbox/robustness_benchmark/multipathPP/predictions/"
+      data_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/predictions/"
     dataloader_config:
       num_workers: 8
   output_config:
-    out_path: "/home/manolotis/sandbox/robustness_benchmark/multipathPP/evaluations/"
+    out_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/evaluations/"
   model:
-    name: "final_RoP_Cov_Single__0f1746c"
+    name: "lstm_1x256__0303335"
+- data_config:
+    dataset_config:
+      data_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/predictions/"
+    dataloader_config:
+      num_workers: 8
+  output_config:
+    out_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/evaluations/"
+  model:
+    name: "lstm_1x512__0303335"
+- data_config:
+    dataset_config:
+      data_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/predictions/"
+    dataloader_config:
+      num_workers: 8
+  output_config:
+    out_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/evaluations/"
+  model:
+    name: "lstm_2x64__0303335"
+- data_config:
+    dataset_config:
+      data_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/predictions/"
+    dataloader_config:
+      num_workers: 8
+  output_config:
+    out_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/evaluations/"
+  model:
+    name: "lstm_2x128__0303335"
+- data_config:
+    dataset_config:
+      data_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/predictions/"
+    dataloader_config:
+      num_workers: 8
+  output_config:
+    out_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/evaluations/"
+  model:
+    name: "lstm_2x256__0303335"
+- data_config:
+    dataset_config:
+      data_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/predictions/"
+    dataloader_config:
+      num_workers: 8
+  output_config:
+    out_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/evaluations/"
+  model:
+    name: "lstm_2x512__0303335"
+- data_config:
+    dataset_config:
+      data_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/predictions/"
+    dataloader_config:
+      num_workers: 8
+  output_config:
+    out_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/evaluations/"
+  model:
+    name: "lstm_3x64__0303335"
+- data_config:
+    dataset_config:
+      data_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/predictions/"
+    dataloader_config:
+      num_workers: 8
+  output_config:
+    out_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/evaluations/"
+  model:
+    name: "lstm_3x128__0303335"
+- data_config:
+    dataset_config:
+      data_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/predictions/"
+    dataloader_config:
+      num_workers: 8
+  output_config:
+    out_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/evaluations/"
+  model:
+    name: "lstm_3x256__0303335"
+- data_config:
+    dataset_config:
+      data_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/predictions/"
+    dataloader_config:
+      num_workers: 8
+  output_config:
+    out_path: "/home/manolotis/sandbox/robustness_benchmark/lstmAutoencoder/evaluations/"
+  model:
+    name: "lstm_3x512__0303335"
+
+#- data_config:
+#    dataset_config:
+#      data_path: "/home/manolotis/sandbox/robustness_benchmark/physicsBased/predictions/"
+#    dataloader_config:
+#      num_workers: 8
+#  output_config:
+#    out_path: "/home/manolotis/sandbox/robustness_benchmark/physicsBased/evaluations/"
+#  model:
+#    name: "cv"
+#- data_config:
+#    dataset_config:
+#      data_path: "/home/manolotis/sandbox/robustness_benchmark/motionCNN/predictions/"
+#    dataloader_config:
+#      num_workers: 8
+#  output_config:
+#    out_path: "/home/manolotis/sandbox/robustness_benchmark/motionCNN/evaluations/"
+#  model:
+#    name: "xception71"
+#- data_config:
+#    dataset_config:
+#      data_path: "/home/manolotis/sandbox/robustness_benchmark/multipathPP/predictions/"
+#    dataloader_config:
+#      num_workers: 8
+#  output_config:
+#    out_path: "/home/manolotis/sandbox/robustness_benchmark/multipathPP/evaluations/"
+#  model:
+#    name: "final_RoP_Cov_Single_lr4e-4__65c803f"
+#- data_config:
+#    dataset_config:
+#      data_path: "/home/manolotis/sandbox/robustness_benchmark/multipathPP/predictions/"
+#    dataloader_config:
+#      num_workers: 8
+#  output_config:
+#    out_path: "/home/manolotis/sandbox/robustness_benchmark/multipathPP/evaluations/"
+#  model:
+#    name: "final_RoP_Cov_Single__0f1746c"
