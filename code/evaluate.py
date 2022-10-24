@@ -1,3 +1,6 @@
+import sys
+
+sys.path.append("/home/manolotis/sandbox/robustness_benchmark/")
 import torch
 
 torch.multiprocessing.set_sharing_strategy('file_system')
