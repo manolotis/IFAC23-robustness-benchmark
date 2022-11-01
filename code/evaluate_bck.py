@@ -20,10 +20,10 @@ torch.backends.cudnn.benchmark = False
 torch.backends.cudnn.deterministic = True
 
 args = parse_arguments()
-config = get_config(args)
+evaluation_configs = get_config(args)
 
-for model in config["models"]:
-    print(f"Evaluating {model['name']}")
+for config in evaluation_configs:
+    print(f"Evaluating {config['model']['name']}")
 
     predictions_dataloader = get_predictions_dataloader(config)
     # savefolder = os.path.join(config["output_config"]["out_path"], config["model"]["name"])
@@ -36,7 +36,7 @@ for model in config["models"]:
     np.savez_compressed(
         os.path.join(
             config["output_config"]["out_path"],
-            f"{model['name']}.npz"),
+            f"{config['model']['name']}.npz"),
         **averaged_minADEs)
 
     print(f"Saved evaluation to ", config["output_config"]["out_path"])
