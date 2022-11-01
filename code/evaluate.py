@@ -25,7 +25,7 @@ config = get_config(args)
 for model in config["models"]:
     print(f"Evaluating {model['name']}")
 
-    predictions_dataloader = get_predictions_dataloader(config)
+    predictions_dataloader = get_predictions_dataloader(config, model)
     # savefolder = os.path.join(config["output_config"]["out_path"], config["model"]["name"])
 
     if not os.path.exists(config["output_config"]["out_path"]):
