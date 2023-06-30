@@ -7,7 +7,7 @@
 	url = git@github.com:manolotis/MotionCNN.git
 [submodule "lstmAutoencoder"]
 	path = lstmAutoencoder
-	url = git@github.com:manolotis/lstmAutoencoder.git
+	url = git@github.com:manolotis/lstmEncoderDecoder.git
 [submodule "physicsBased"]
 	path = physicsBased
 	url = git@github.com:manolotis/physics-based-prediction.git
