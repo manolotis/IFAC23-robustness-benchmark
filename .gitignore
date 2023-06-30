@@ -1,2 +1,10 @@
 .idea/
 venv/
+code/visualize_extremes.py
+code/visualize.py
+code/plot_evaluations_per_example.py
+code/plot_evaluations.py
+code/evaluate_bck.py
+code/evaluate_per_example.py
+code/compile_results.py
+plots

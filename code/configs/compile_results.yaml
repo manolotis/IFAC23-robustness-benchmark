@@ -1,0 +1,115 @@
+root_path: "/home/manolotis/sandbox/robustness_benchmark/"
+
+cv:
+  label: "CV"
+  evaluations_folder: "physicsBased/evaluations/"
+  evaluation_base:
+    name: "base"
+    path: "cv.npz"
+lstm:
+  label: "LSTM"
+  evaluations_folder: "lstmAutoencoder/evaluations/"
+  evaluation_base:
+    name: "base"
+    label: ""
+    path: "lstm_3x128__0303335.npz"
+  evaluations_perturbed:
+    - name: "no_past"
+      label: "No past"
+      path: "lstm_3x128__0303335_no_past.npz"
+    - name: "noisy_heading"
+      label: "Noisy heading"
+      path: "lstm_3x128__0303335_noisy_heading.npz"
+  retrained:
+    evaluations_original:
+      - name: "no_past_retrained_unperturbed"
+        label: "Original data, retrained without past"
+        path: "lstm_3x128_no_past__21445f6_retrained_unperturbed.npz"
+      - name: "noisy_heading_retrained_unperturbed"
+        label: "Original data, retrained with noisy angle"
+        path: "lstm_3x128_noisy_heading__21445f6_retrained_unperturbed.npz"
+    evaluations_perturbed:
+      - name: "no_past_retrained"
+        label: "No past (retrained)"
+        path: "lstm_3x128_no_past__21445f6_retrained.npz"
+      - name: "noisy_heading_retrained"
+        label: "Noisy heading (retrained)"
+        path: "lstm_3x128_noisy_heading__21445f6_retrained.npz"
+
+motionCNN:
+  label: "MotionCNN"
+  evaluations_folder: "motionCNN/evaluations/"
+  evaluation_base:
+    name: "base"
+    label: ""
+    path: "xception71.npz"
+  evaluations_perturbed:
+    - name: "no_road"
+      label: "No road"
+      path: "xception71_no_road.npz"
+    - name: "no_past"
+      label: "No past"
+      path: "xception71_no_past.npz"
+    - name: "noisy_heading"
+      label: "Noisy heading"
+      path: "xception71_noisy_heading.npz"
+  retrained:
+    evaluations_original:
+      - name: "no_road_retrained_unperturbed"
+        label: "Original data, retrained without road"
+        path: "xception71_no_road_retrained_unperturbed.npz"
+      - name: "no_past_retrained_unperturbed"
+        label: "Original data, retrained without past"
+        path: "xception71_no_past_retrained_unperturbed.npz"
+      - name: "noisy_heading_retrained_unperturbed"
+        label: "Original data, retrained with noisy angle"
+        path: "xception71_noisy_heading_retrained_unperturbed.npz"
+    evaluations_perturbed:
+      - name: "no_road_retrained"
+        label: "No road (retrained)"
+        path: "xception71_no_road_retrained.npz"
+      - name: "no_past_retrained"
+        label: "No past (retrained)"
+        path: "xception71_no_past_retrained.npz"
+      - name: "noisy_heading_retrained"
+        label: "Noisy heading (retrained)"
+        path: "xception71_noisy_heading_retrained.npz"
+multipathPP:
+  label: "MultiPath++"
+  evaluations_folder: "multipathPP/evaluations/"
+  evaluation_base:
+    name: "base"
+    label: ""
+    path: "final_RoP_Cov_Single__18c3cff.npz"
+  evaluations_perturbed:
+    - name: "no_road"
+      label: "No road"
+      path: "final_RoP_Cov_Single__18c3cff_no_road.npz"
+    - name: "no_past"
+      label: "No past"
+      path: "final_RoP_Cov_Single__18c3cff_no_past.npz"
+    - name: "noisy_heading"
+      label: "Noisy heading"
+      path: "final_RoP_Cov_Single__18c3cff_noisy_heading.npz"
+
+  retrained:
+    evaluations_original:
+      - name: "no_road_retrained_unperturbed"
+        label: "Original data, retrained without road"
+        path: "final_RoP_Cov_Single_no_road__a4c65b3_retrained_unperturbed.npz"
+      - name: "no_past_retrained_unperturbed"
+        label: "Original data, retrained without past"
+        path: "final_RoP_Cov_Single_no_past__a4c65b3_retrained_unperturbed.npz"
+      - name: "noisy_heading_retrained_unperturbed"
+        label: "Original data, retrained with noisy angle"
+        path: "final_RoP_Cov_Single_noisy_heading__18c3cff_retrained_unperturbed.npz"
+    evaluations_perturbed:
+      - name: "no_road_retrained"
+        label: "No road (retrained)"
+        path: "final_RoP_Cov_Single_no_road__a4c65b3_retrained.npz"
+      - name: "no_past_retrained"
+        label: "No past (retrained)"
+        path: "final_RoP_Cov_Single_no_past__a4c65b3_retrained.npz"
+      - name: "noisy_heading_retrained"
+        label: "Noisy heading (retrained)"
+        path: "final_RoP_Cov_Single_noisy_heading__18c3cff_retrained.npz"
